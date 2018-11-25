@@ -13,8 +13,8 @@ GPTaskManager::GPTaskManager()
   #ifndef GPTM_TIME_REEL
     //temp de pause
     this->time_pause = -1;
-    this->time_start = millis();
   #endif
+    this->time_start = millis();
 
   #ifdef DEBUG
     Serial.print("Task Manager Start\n");
@@ -170,8 +170,8 @@ void GPTaskManager::update()
     i = this->time_pause-(millis()-this->time_start);
     if( i > 10 )
         delay( i );
-    this->time_start = millis();
   #endif
+  this->time_start = millis();
 }
 
 

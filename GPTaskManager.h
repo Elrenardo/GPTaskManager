@@ -125,8 +125,8 @@ class GPTaskManager
   private:
     #ifndef GPTM_TIME_REEL
       unsigned long time_pause;//temp mini de pause entre chaque tache
-      ulong time_start;
     #endif
+	ulong time_start;
 
     unsigned int nb_task;
     struct GPTask **task;   //tableau des tache en cours
